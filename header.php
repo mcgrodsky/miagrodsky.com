@@ -10,8 +10,12 @@
       <h1 class = "h1-header">
         <a href = "<?php echo site_url(); ?> ">MiaKoda Grodsky</a>
         <div class = "icons">
-          <i class="fa fa-linkedin-square"></i>
-          <i class="fa fa-github-square"></i>
+          <a href = "https://www.linkedin.com/in/miagrodsky">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+          <a href = "https://github.com/mcgrodsky">
+            <i class="fa fa-github-square"></i>
+          </a>  
           <a href="mailto:mcgrodsky@gmail.com">
   			  <i class="fa fa-envelope-o"></i>
         </div>
