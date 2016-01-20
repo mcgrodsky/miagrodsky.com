@@ -27,9 +27,9 @@ a{
 body{
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
-    margin: 0 0 100px;
-    background-color: black;
-    color:white;
+    background-color: #C1C9D8;
+    color:#7D5151;
+    margin: 0;
 }
 
 .page_template{
@@ -38,8 +38,7 @@ body{
   display: block;
   padding: 1em 5em;*/
   border-top: 5px solid white;
-  border-bottom: 5px solid white;
-  margin-bottom: 3em;
+  background: #e0e4ec;
 }
 
 /*fonts*/
@@ -53,27 +52,59 @@ body{
   font-size: 15px;
 }
 
-.h1header{
-  color: white;
+header{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 72px;
+  line-height: 58px;
+  height: 58px;
+  background: #C1C9D8;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom:4em
+
+}
+
+header.sticky {
+  font-size: 24px;
+  line-height: 58px;
+  height: 58px;
+  background:#C1C9D8;
+  transition: all 0.5s ease;
+  padding-top:1em;
+
+}
+
+.about-me-h1{
+  margin-top: 7em;
+  }
+
+  .h1header{
+  color: #7D5151
   font-size: 50px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   display: block;
   text-align: center;
+
+
 }
 .h1-header a{
-  color: white;
+  color: #7D5151;
   font-size: 80px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
 
-.h1-header a:hover{
-  color: orange;
-}
 
+.h1-header{
+    margin-bottom: 0;
+    margin-top:0;
+    background: #c1c9d8;
+}
 .icons i{
-  color: orange;
+  color: #51517D;
   font-size: 40px;
   margin: .3em;
   padding-bottom: .5em;
@@ -102,9 +133,10 @@ about me box*/
   font-family: 'Lato', sans-serif;
   max-width: 60%;
   margin: 0 auto;
-  border: 5px solid orange;
+  border: 5px solid #51517D;
   padding: 1em;
   line-height: 180%;
+  border-radius: 6px;
 }
 
 
@@ -143,7 +175,6 @@ about me box*/
   width: 90%;
   margin: 0 auto;
   margin-top: 2%;
-  position: relative;
   margin-bottom: 5%;
 }
 
@@ -152,13 +183,14 @@ about me box*/
   width: 40%;
   padding: 0 1%;
   font-family: 'Lato';
-  color: white;
+  color: #7D5151;
   margin: 1em auto;
 }
 
 .portfolio-element img{
-  border: 2px solid white;
+  border: 1px solid #51517D;
   max-width: 100%;
+  border-radius: 6px;
 }
 
 .portfolio-element img:hover{
@@ -189,11 +221,19 @@ about me box*/
   margin: 0 auto;
 }
 
+.description {
+    display:none;
+    position:absolute;
+    border:1px solid #000;
+    width:100px;
+    height:70px;
+}
+
+
 /*footer*/
-footer{
-position: absolute;
-    left: 0;
-    bottom: 0;
-    height:2%;
-    width: 100%;
+
+#footer{
+  border-top: 8px solid white;
+  padding: 1em;
+  background: #C1C9D8;
 }

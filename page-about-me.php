@@ -2,17 +2,33 @@
 <?php if(have_posts()):
   while(have_posts()):
     the_post();?>
-    <h1 class = "h1header"> About Me </h1>
+    <h1 class = "h1header about-me-h1"> About Me </h1>
 
     <div class = "about-me"><?php the_content();?>
     </div>
   <?php endwhile;endif ?>
 
-
   <img class ="about_me_img" src="<?php the_field('image'); ?>" />
 
   <h1 class = "h1header h1portfolio"> Portfolio</h1>
   <div class = "portfolio">
+    <div class = "portfolio-element">
+      <a href = "https://learning-to-shred.herokuapp.com/">
+
+      <img src="http://i.imgur.com/Fs73vLB.png alt="Learning to Shred" width="550px" height="300px" class = "img-one" /><div class="description"> Here is the big fat description box</div>
+
+      </a>
+      <p>Learning to Shred offers an easy-to-use interface for creating guitar chords. Users have the ability to populate the fretboard with pre-generated chords, or make their own chords by clicking on the frets.</p>
+      <div class="tech-used-div clearfix">
+      <div class="tech-used">Ruby on Rails</div>
+      <div class="tech-used">SASS</div>
+      <div class="tech-used">Javascript/jQuery</div>
+      <div class="tech-used">Susy</div>
+      <div class="tech-used">Git/Github</div>
+      <div class="tech-used">Heroku </div>
+      </div>
+
+    </div>
     <div class = "portfolio-element">
       <a href = "http://housemate-matchmaker.herokuapp.com">
 
@@ -75,6 +91,6 @@
           <div class="tech-used">Git/Github</div>
           </div>
       </div>
+<div id = "footer">MiaKoda Grodsky &copy; 2016</div>
 
-</div>
   <?php get_footer();?>
