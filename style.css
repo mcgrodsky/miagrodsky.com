@@ -6,9 +6,6 @@ Theme Name: miagrodsky.com
   box-sizing:border-box;
 }
 
-html{
-
-}
 
 .clearfix:after {
    content: ".";
@@ -23,24 +20,26 @@ html{
 a{
   text-decoration:none;
 }
-
+html{
+  background: url('bright_squares.png');
+}
 body{
-    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
-    background-color: #C1C9D8;
-    color:#7D5151;
+    background: url('bright_squares.png');
+    color:#F0F0F0;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .page_template{
-  /*position: absolute;
-  text-align: left;
-  display: block;
-  padding: 1em 5em;*/
-  border-top: 5px solid white;
-  background: #e0e4ec;
+  border-top: 5px solid #003399;
+  background: white;
 }
 
+.description{
+  background-color: rgba(128,128,128,0.2);
+}
 /*fonts*/
 
 .p1{
@@ -52,59 +51,64 @@ body{
   font-size: 15px;
 }
 
+p, li{
+  font-family: 'Raleway', sans-serif;
+}
+
 header{
   position: fixed;
   width: 100%;
   text-align: center;
-  font-size: 72px;
+  letter-spacing: 2px;
+  font-size: 32px;
+  padding-top: 10px;
   line-height: 58px;
-  height: 58px;
-  background: #C1C9D8;
+  height: 150px;
+  background: url('bright_squares.png');
   color: #fff;
-  font-family: 'PT Sans', sans-serif;
-  margin-bottom:4em
+  font-family: 'Lato', sans-serif;
+  margin-bottom:4em;
+  padding:.5em;
+  border-bottom: 3px solid #003399;
 
 }
 
 header.sticky {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 58px;
-  height: 58px;
-  background:#C1C9D8;
-  transition: all 0.5s ease;
-  padding-top:1em;
-
+  height: 90px;
+  background: url('bright_squares.png');
 }
 
 .about-me-h1{
-  margin-top: 7em;
+  margin-top: 4em;
   }
 
   .h1header{
-  color: #7D5151
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
   display: block;
   text-align: center;
-
+  margin-bottom:0;
+  color: #5b5b5b;
 
 }
 .h1-header a{
-  color: #7D5151;
-  font-size: 80px;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  color: #CF5300;
+  float: left;
 }
+.icons{
+  float:right;
 
-
+}
 .h1-header{
     margin-bottom: 0;
     margin-top:0;
-    background: #c1c9d8;
+    background: url('bright_squares.png');
+    padding-top: .2em;
 }
 .icons i{
-  color: #51517D;
+  color: #003399;
   font-size: 40px;
   margin: .3em;
   padding-bottom: .5em;
@@ -115,9 +119,6 @@ header.sticky {
   cursor: pointer; cursor: hand;
 }
 
-
-
-
 /*
 about me box*/
 
@@ -125,23 +126,29 @@ about me box*/
   overflow: hidden;
   margin: 0 auto;
   max-width: 100%;
+  width: 80%;
+  border: 2px solid #003399;
+  padding:2em;
+  background: url('bright_squares.png');
+
 }
 
 .about-me p{
   font-size: 20px;
   text-align: center;
-  font-family: 'Lato', sans-serif;
-  max-width: 60%;
-  margin: 0 auto;
-  border: 5px solid #51517D;
-  padding: 1em;
   line-height: 180%;
-  border-radius: 6px;
+  padding:3em 1em;
+  /*background: rgba(0, 245 ,255 ,.2);*/
+  color: #466675;
 }
 
 
 .about-me p a{
-  color: orange;
+  color: #be5e00;
+}
+
+.about-me-img{
+  float:left;
 }
 
 @media (min-width: 200px) and (max-width: 800px) {
@@ -169,49 +176,70 @@ about me box*/
 
 .portfolio{
   margin: 0 auto;
+  width: 80%;
+  background: url('bright_squares.png');
+  border: 2px solid #003399;
+  padding: 6px;
+  margin-bottom: 3em;
 }
 
 .portfolio-element{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 5%;
+
+}
+
+.img-one, .img-three{
+  float:left;
+  margin-right:1em;
+}
+
+.img-two, .img-four{
+  float:right;
+  margin-left: 2em;
 }
 
 .portfolio-element p {
   text-decoration: none;
-  width: 40%;
+  width: 90%;
   padding: 0 1%;
-  font-family: 'Lato';
-  color: #7D5151;
-  margin: 1em auto;
+  color: black;
+  padding-top: 1em;
 }
 
 .portfolio-element img{
-  border: 1px solid #51517D;
+  border: 1px solid #003399;
   max-width: 100%;
   border-radius: 6px;
 }
 
 .portfolio-element img:hover{
-  opacity: .3;
+  opacity: .6;
   cursor: pointer; cursor: hand;
 }
 
 .tech-used{
+  color:black;
+
+}
+
+/*.tech-used{
   margin: 1%;
-  border: 2px solid #EE7600;
-  background-color: #f6cfa9;
+  border: 2px solid #2F4D6F;
+  background-color: #9FB9B6;
   border-radius: 6px;
-  padding: 3px;
+  padding: 4px;
   text-align: center;
   color: black;
   float: left;
-}
+}*/
 
 .tech-used-div{
   margin: 0 auto;
-  width: 40%;
+}
+
+li{
+  list-style-type: none;
 }
 
 .work-image{
@@ -221,19 +249,14 @@ about me box*/
   margin: 0 auto;
 }
 
-.description {
-    display:none;
-    position:absolute;
-    border:1px solid #000;
-    width:100px;
-    height:70px;
-}
+
 
 
 /*footer*/
 
 #footer{
-  border-top: 8px solid white;
+  border-top: 3px solid #003399;
   padding: 1em;
-  background: #C1C9D8;
+  background: url('bright_squares.png');
+  color: #CF5300;
 }
