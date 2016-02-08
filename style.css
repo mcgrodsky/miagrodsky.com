@@ -16,7 +16,7 @@ Theme Name: miagrodsky.com
    overflow: auto;
 }
 
-/*remove underline from all hyperlinks*/
+/* remove underline from all hyperlinks */
 a{
   text-decoration:none;
 }
