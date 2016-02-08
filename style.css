@@ -21,7 +21,8 @@ a{
   text-decoration:none;
 }
 html{
-  background: url('bright_squares.png');
+  background: url('new_year_background.png');
+
 }
 body{
     text-align: center;
@@ -29,6 +30,7 @@ body{
     color:#F0F0F0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    background: url('new_year_background.png');
 
 }
 
@@ -64,7 +66,7 @@ header{
   padding-top: 10px;
   line-height: 58px;
   height: 150px;
-  background: url('bright_squares.png');
+  background: url('new_year_background.png');
   color: #fff;
   font-family: 'Lato', sans-serif;
   margin-bottom:4em;
@@ -76,7 +78,7 @@ header.sticky {
   font-size: 25px;
   line-height: 58px;
   height: 90px;
-  background: url('bright_squares.png');
+  background: url('new_year_background.png');
 }
 
 .about-me-h1{
@@ -103,7 +105,7 @@ header.sticky {
 .h1-header{
     margin-bottom: 0;
     margin-top:0;
-    background: url('bright_squares.png');
+    background: url('new_year_background.png');
     padding-top: .2em;
 }
 .icons i{
@@ -128,7 +130,7 @@ about me box*/
   width: 80%;
   border: 2px solid #003399;
   padding:2em;
-  background: url('bright_squares.png');
+  background: url('new_year_background.png');
 
 }
 
@@ -150,27 +152,6 @@ about me box*/
   float:left;
 }
 
-@media (min-width: 200px) and (max-width: 800px) {
-  .about-me p{
-    max-width: 90%;
-    overflow: hidden;
-    }
-    .tech-used-div{
-      width: 90%;
-      margin-top: 2px;
-    }
-    .portfolio-element p{
-      width: 90%;
-    }
-
-    /*.portfolio-element{
-      width: 100%;
-      width: 100%;
-      border: 3px solid blue;
-    }*/
-}
-
-/* portfolio section */
 
 
 .portfolio{
@@ -222,16 +203,6 @@ about me box*/
 
 }
 
-/*.tech-used{
-  margin: 1%;
-  border: 2px solid #2F4D6F;
-  background-color: #9FB9B6;
-  border-radius: 6px;
-  padding: 4px;
-  text-align: center;
-  color: black;
-  float: left;
-}*/
 
 .tech-used-div{
   margin: 0 auto;
@@ -254,4 +225,24 @@ li{
   padding: 1em;
   background: url('bright_squares.png');
   color: #CF5300;
+}
+
+
+@media(max-width: 568px){
+  header{
+    height:220px;
+  }
+  header.sticky{
+    height:150px;
+  }
+  header a{
+    margin:0 auto;
+    width:100%;
+  }
+  header .icons a{
+    width:32%;
+  }
+  .icons{
+    float:none;
+  }
 }
