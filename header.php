@@ -2,7 +2,7 @@
   <html>
   <head>
     <?php wp_head(); ?>
-<link href='https://fonts.googleapis.com/css?family=Raleway|Lato:400,300italic,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Fira+Sans|Raleway|Lato:400,300italic,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   </head>
