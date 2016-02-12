@@ -22,16 +22,16 @@ a{
 }
 html{
 
-  background: url('new_year_background.png');
+  background: white;;
 
 }
 body{
     text-align: center;
-    background: url('bright_squares.png');
+    background: white;
     color:#F0F0F0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background: url('new_year_background.png');
+    background: white;
 
 }
 
@@ -41,7 +41,7 @@ body{
 }
 
 .description{
-  background-color: rgba(207, 83, 0, .5);
+  background:#b5e1e0;
 }
 /*fonts*/
 
@@ -67,19 +67,19 @@ header{
   padding-top: 10px;
   line-height: 58px;
   height: 150px;
-  background: url('new_year_background.png');
+  background: white;
   color: #fff;
   font-family: 'Lato', sans-serif;
   margin-bottom:4em;
   padding:.5em;
-  border-bottom: 3px solid #003399;
+  border-bottom: 2px solid #505050;
 }
 
 header.sticky {
   font-size: 25px;
   line-height: 58px;
   height: 90px;
-  background: url('new_year_background.png');
+  background: white;
 }
 
 .about-me-h1{
@@ -92,11 +92,11 @@ header.sticky {
   display: block;
   text-align: center;
   margin-bottom:0;
-  color: #5b5b5b;
+  color: #505050;
 
 }
 .h1-header a{
-  color: #CF5300;
+  color: #129792;
   float: left;
   padding-right:.5em;
 }
@@ -107,18 +107,18 @@ header.sticky {
 .h1-header{
     margin-bottom: 0;
     margin-top:0;
-    background: url('new_year_background.png');
+    background: white;
     padding-top: .2em;
 }
 .icons i{
-  color: #003399;
+  color: #ff4f39;
   font-size: 40px;
   margin: .3em;
   padding-bottom: .5em;
 }
 
 .icons i:hover{
-  color:#1559df;
+  color:#505050;
   cursor: pointer; cursor: hand;
 }
 
@@ -129,9 +129,9 @@ about me box*/
   overflow: hidden;
   margin: 0 auto;
   width: 95%;
-  border: 2px solid #003399;
+  border: 2px solid #505050;
   padding:2em;
-  background: url('new_year_background.png');
+  background:white;
 
 }
 
@@ -141,12 +141,12 @@ about me box*/
   line-height: 180%;
   padding:3em 1em;
   /*background: rgba(0, 245 ,255 ,.2);*/
-  color: #466675;
+  color: #505050;
 }
 
 
 .about-me p a{
-  color: #be5e00;
+  color: #ff4f39;
 }
 
 .about-me-img{
@@ -159,8 +159,8 @@ about me box*/
 .portfolio{
   margin: 0 auto;
   width: 80%;
-  background: url('new_year_background.png');
-  border: 2px solid #003399;
+  background: white;
+  border: 2px solid #505050;
   padding: 6px;
   margin-bottom: 3em;
 }
@@ -185,7 +185,7 @@ about me box*/
   text-decoration: none;
   width: 90%;
   padding: 0 1%;
-  color: black;
+  color: #505050;
   padding-top: 1em;
 }
 
@@ -201,7 +201,7 @@ about me box*/
 }
 
 .tech-used{
-  color:black;
+  color:#505050;
 
 }
 
@@ -224,27 +224,15 @@ li{
 /*footer*/
 
 #footer{
-  border-top: 3px solid #003399;
+  border-top: 2px solid #505050;
   padding: 1em;
-  background: url('bright_squares.png');
-  color: #CF5300;
-}
-
-
-@media(max-width: 599px){
-.h1-header a{
-    color:yellow;
-  }
-  header{
-    height:auto;
-  }
+  background:white;
+  color: #505050
 }
 
 
 @media(max-width: 885px){
-  header{
-    height:180px;
-  }
+
   header.sticky{
     height:170px;
   }
@@ -262,4 +250,22 @@ li{
       margin-top: 5em;
       }
   }
+}
+@media(max-width: 475px){
+  header.sticky{
+    height:220px;
+  }
+}
+
+@media(max-width: 599px){
+
+  header{
+    height:225px;
+  }
+  header.sticky{
+    height:200px;
+  }
+  .about-me-h1{
+    margin-top: 6em;
+    }
 }
